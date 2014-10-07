@@ -7,10 +7,69 @@
 \usepackage{amsmath}
 \usepackage{amsthm}   %důkazy
 \usepackage[czech]{babel}
+\usepackage{IEEEtrantools}
+\usepackage{paralist}
+\newcommand{\vnot}[1]{\ensuremath{{\sim}#1}}
 
 \begin{document}
 
-\section*{7. ???}
-Abstrakt pre 7. kapitolu.
+\setcounter{section}{6}
+\section{Chromatická fantazie a spor}
+
+\subsection{Dialog}
+Achilles se snaží přistihnout pana Želvu při sporu avšak naráží na problém,
+když se mu snaží vysvětlit jak má zacházet s výroky.
+
+\subsection{Výroková logika (výrokový počet)}
+
+\subsubsection{Abeceda}
+\begin{IEEEeqnarray*}{lClClCl}
+    &&            \langle &\quad& \rangle \\
+    P     &\quad&   Q     &\quad& R           &\quad& ' \\
+    \land &&        \lor  &&      \rightarrow &&        \sim \\
+          && [            && ]
+\end{IEEEeqnarray*}
+
+\subsubsection{Pravidla vytváření řetězců}
+Jestliže $x$ a $y$ jsou dobře utvořené řetězce, pak následující čtyři
+řetězce jsou také dobře utvořené:
+\begin{compactenum}
+\item $\vnot{x}$
+\item $\langle x \land y \rangle$
+\item $\langle x \lor y \rangle$
+\item $\langle x \rightarrow y \rangle$
+\end{compactenum}
+
+\subsubsection{Odvozovací pravidla}
+\begin{description}
+    \item[Pravidlo spojení] Jestliže $x$ a $y$ jsou teorémy, pak řetězec
+        $\langle x \land y \rangle$ je také teorém.
+    
+    \item[Pravidlo oddělení] Jestliže $\langle x \land y \rangle$ je teorém,
+        pak řetězce $x$ a $y$ jsou také teorémy.
+
+    \item[Pravidlo dvojí vlnovky] Z jakéhokoliv teorému můžeme odstranit
+        řetězec \uv{$\sim\sim$}. Do jakéhokoli teorému ůžeme vložit řetězec \uv{$\sim\sim$} za
+        předpokladu, že nově vzniklý řetězec je dobře utvořený. V obou případech je
+        výsledný řetězec také teorém.
+
+    \item[Pravidlo fantazie] Jestliže za předpokladu, že $x$ je teorém, můžeme odvodit
+        $y$, pak $\langle x \rightarrow y \rangle$ je také teorém ($\equiv$ věta o dedukci ??).
+
+    \item[Pravidlo přenosu] Jsme-li uvnitř nějaké fantazie, můžeme do ní přenést
+        a v ní využívat jakýkoliv teorém z \uv{reality} o jednu úroveň výše.
+
+    \item[Pravidlo odloučení] Jestliže $x$ a $\langle x \rightarrow y \rangle$ jsou
+        teorémy, pak $y$ je také teorém ($\equiv$ Modus Ponens).
+
+    \item[Pravidlo transpozice (obměny)] Výrazy $\langle x \rightarrow y \rangle$
+        a $\langle \vnot{x} \rightarrow \vnot{y} \rangle$ jsou zaměnitelné (ekvivalentní).
+
+    \item[De Morganovo pravidlo] Výrazy $\langle \vnot{x} \land \vnot{y} \rangle$ a
+        $\vnot{\langle x \lor y \rangle}$ jsou zaměnitelné.
+
+    \item[Pravidlo prohození] Výrazy $\langle x \land y \rangle$ a
+        $\langle \vnot{x} \rightarrow y \rangle$ jsou zaměnitelné.
+\end{description}
 
 \end{document}
