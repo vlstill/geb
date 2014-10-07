@@ -6,6 +6,7 @@
 \usepackage{amssymb}
 \usepackage{amsmath}
 \usepackage{amsthm}   %důkazy
+\usepackage{enumitem}
 \usepackage[czech]{babel}
 
 \begin{document}
@@ -13,7 +14,7 @@
 \section*{6. Kánon ve zvětšených intervalech}
 Achilles a Želva sedí po opulentní večeři pro dva v nejlepší čínské restauraci 
     ve městě a povídají si.
-\begin{description}
+\begin{description}[itemsep=0pt]
 \item[A:] Tedy vy to s těmi hůlkami umíte, pane Ž.
 
 \item[Ž:] To sú roky driny. Už od detstva som miloval orientálnu kuchyňu. 
@@ -142,105 +143,136 @@ Achilles a Želva sedí po opulentní večeři pro dva v nejlepší čínské re
     se dá s pomocí takového bláznivého zařízení zahrát na jedné desce víc než
     jedna písnička.
 
-\item[Ž:] Tiež som sa na to kraba spýtal. 
+\item[TODO] parodia na eura ?
+
+\item[Ž:] Tiež som sa na to kraba spýtal. Ponúkol mi, aby som si to vyskúšal. 
+    Tak som vytiahol dvacku, za to dostanete 3 pesničky, vhodil som ju do štrbiny 
+    na mince a stlačil B-1, potom C-3 a potom B-10, úplne náhodne
 
 \item[A:] Takže předpokládám, že přehrávač B1 si to přihasil po koleji
     a začal rotovat?
 
-\item[Ž:]
+\item[Ž:] Presne tak. Prístroj spustil príjemnú melódiu, založenú na postupnosti 
+    tónov B-A-C-H, ktorú si možno ešte pamätáte\dots
+    
+\item[melodia] bach
 
 \item[A:] Jak bych na ni mohl zapomenout?
 
-\item[Ž:]
+\item[Ž:] Tak, B-1 by sme mali. Hudba skončila, prehrávač sa odpratal späť a 
+    uvolnil miesto prehrávaču C-3.
 
 \item[A:] Snad mi nebudete tvrdit, že C3 zahrál jinou píseň.
 
-\item[Ž:]
+\item[Ž:] Je mi ľúto, ale áno.
 
 \item[A:] No jasně, vždyť na tom vlastně nic není. Zahrál skladbu na druhé straně desky.
     Nebo spustil přenosku o drážku dál.
 
-\item[Ž:]
+\item[Ž:] Ale kdeže, platna má drážky len na jednej strane a je na nej iba jediná skladba.
 
 \item[A:] To je hloupost! Z jedné desky přece NEJDE vytáhnout dvě různé skladby!
 
-\item[Ž:]
+\item[Ž:] Tiež som si to myslel, kým mi Krab neukázal svoj jukebox.
 
 \item[A:] A jak vlastně zněla ta druhá skladba?
 
-\item[Ž:]
+\item[Ž:] To je na tom to najzaujímavejšie. Bola to melódia založená na tónoch C-A-G-E
+
+\item[melodia] cage
 
 \item[A:] To je ale přece úplně jiná melodie!
 
-\item[Ž:]
+\item[Ž:] Veď práve.
 
 \item[A:] A není náhodou John Cage skladatel moderní hudby? Mám dojem, že jsem o něm
     zachytil zmínku v jedné knize o haiku.
 
-\item[Ž:]
+\item[Ž:] Samozrejme, že je. Napísal množstvo veľmi slávnych skladieb, napríklad 4'33'', 
+    čo je skladba o troch vetách, pozostávajúca zo samých intervalov ticha rôznej dĺžky. 
+    Fantasticky pôsobivá vec, teda ak vás takéto veci zaujímajú.
 
 \item[A:] Dovedu si představit, že kdybych třeba seděl v hlučné kavárně, s radostí
     bych obětoval bůra a nechal bych si zahrát 4'33'' třikrát za sebou. To byla, pane, úleva!
 
-\item[Ž:]
+\item[Ž:] Samozrejme, kto by chcel počúvať rinčanie riadu a cinkanie pohárov. Podobné 
+    miesto, kde by sa 4'33'' tiež nesmierne hodila je pavilón šeliem počas kŕmenia.
 
 \item[A:] Rozumím-li správně vaším narážkám, pak naznačujete, že byste Cage nejradši
     strčil do klece. To mi vcelku dává smysl. Zase mi ale není moc jasné, jak je
     to s tou Krabovou hrací skříní. Jek mohou být BACH i CAGE zakódování na stejné
     desce?
 
-\item[Ž:]
+\item[Ž:] Keď to naozaj dôkladne preskúmate, zistíte, že tí dvaja majú mnoho spoločné. 
+    Vysvetlím vám to konkrétne. Vezmite si melódiu B-A-C-H a spočítajte intervaly medzi 
+    jednotlivými tónami. Čo vám vyjde?
 
 \item[A:] Počkejte, to bych mohl zvládnout. Tak jako prví bod programu
     máme pokles o jeden půltón, přesněji z B na A, pak výstup o tři půltóny
     na C, a konečně pokles o jeden půltón z H do C. Získáváme vzorec $-1, +3, -1$.
 
-\item[Ž:]
+\item[Ž:] Presne tak. A čo C-A-G-E?
 
 \item[A:] V tom případě tu máme nejprve pokles o 3 půltóny, pak výstup o
     10 půltónů, skoro celou oktávu, a konečně další pokles o tři půltóny.
     Tentokrát vzorec vypadá jako $-3, +10, -3$. To je dost podobné
     tomu předchozímu schématu, nezdá se vám?
 
-\item[Ž:]
+\item[Ž:] No samozrejme. Obe melódie sledujú podobnú osnovu, majú rovnakú 
+    \uv{kostru}, ak mi rozumiete. Z Bacha dostanete Cage jednoducho tak, 
+    že všetky intervaly vynásobíte konštantou $3\frac{1}{3}$ a zaokrúhlite 
+    na celé číslo.
 
 \item[A:] No to mě podržte a zase pusťte! Znamená to, že v drážkách té desky
     je pouze zakódováno nějaké rámcové schéma a různé přehrávače si ho interpretují
     po svém?
 
-\item[Ž:]
+\item[Ž:] Ja vlaste ani presne neviem, ako to funguje. Krab si dáva dosť bacha 
+    a nevraví mi ani zďaleka všetko. Ale bol som veľmi zvedavý, s čím príde 
+    prehrávač tretej melódie. Netrpezlivo som sledoval, ako sa B-10 blíži k platni.
 
 \item[A:] Nenapínejte mě!
 
-\item[Ž:]
+\item[Ž:] Melódia skákala hore a dole po obrovských intervaloch ako pominutá. 
+    Výsledok znel B-C-A-H.
+
+\item[melodia] bcah
+
+\item[Ž:] Zapísané v intervaloch pomocou poltónov to vyzerá takto: $-10, +33, -10$
 
 \item[A:] Má tohle násobení intervalů nějaký název?
 
-\item[Ž:]
+\item[Ž:] Mohli by sme to volať napríklad \uv{zväčšovanie intervalov}. Je to obdoba 
+    bežne používaného \uv{zväčšovania dĺžok}, keď sa všetky tóny v melódii predĺžia 
+    v rovnakom pomere danom konštantou. V takom prípade je účelom jednoudcho len 
+    spomalenie skladby. V našom prípade ide o rozšírenie melodického rozsahu, naviac 
+    veľmi zvláštnym spôsobom.
 
 \item[A:] Úžasné! Takže tři různé melodie, které jste slyšel, byly jen rozličnými
     výsledky zvětšování intervalů jednoho jediného záznamu ukrytého v drážkách té desky.
 
-\item[Ž:]
+\item[Ž:] Dospel som k rovnakému záveru ako vy.
 
 \item[A:] Připadá mi pozoruhodné, že zvětšením BACH dostanete CAGE a jeho dalším
     zvětšením dostanete zase zpátky BACH, i když trochu přerovnané.
     Budí to dojem, jako by BACH při průchodu mezifází CAGE dostal prudkou žaludeční
     nevolnost.
 
-\item[Ž:]
+\item[Ž:] To je teda veľmi príhodný komentár k novej forme umenia od Johna Cage.
 
 \end{description}
 
 \newpage
 \section*{7. Chromatická fantazie a spor}
 
-\begin{description}
+\begin{description}[itemsep=0pt]
+
+\item[Ž:] Achilles! Akurát som na vás myslel, ako som si tak plával v rybníčku.
 
 \item[A:] No není to zvláštní? Já jsem na vás také zrovna myslel, jak jsem si
     to rázoval lukami. V tuto dobu jsou tak zelené…
 
-\item[Ž:]
+\item[Ž:] 
 
 \item[A:] S největší radostí. Tedy, s největší radostí, ale pouze za předpokladu,
     že mě nebude chtít zase vtáhnout do některé z těch vašich proslulých
