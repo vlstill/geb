@@ -116,3 +116,6 @@ sympy-plots-for-*.tex/
 
 # other
 *.pdf
+
+# TeXStudio session file
+*.txss
