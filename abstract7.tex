@@ -67,7 +67,7 @@ pak následující čtyři řetězce jsou také dobře utvořené:
         výsledný řetězec také teorém.
 
     \item[Pravidlo fantazie] Jestliže za předpokladu, že $x$ je teorém, můžeme odvodit
-        $y$, pak $\langle x \rightarrow y \rangle$ je také teorém ($\equiv$ věta o dedukci ??).
+        $y$, pak $\langle x \rightarrow y \rangle$ je také teorém ($\equiv$ věta o dedukci).
 
     \item[Pravidlo přenosu] Jsme-li uvnitř nějaké fantazie, můžeme do ní přenést
         a v ní využívat jakýkoliv teorém z \uv{reality} o jednu úroveň výše.
@@ -84,5 +84,30 @@ pak následující čtyři řetězce jsou také dobře utvořené:
     \item[Pravidlo prohození] Výrazy $\langle x \land y \rangle$ a
         $\langle \vnot{x} \rightarrow y \rangle$ jsou zaměnitelné.
 \end{description}
+
+\subsubsection{Zamyšlení nad bezesporností a důkazy obecně}
+
+Dialog mezi paní Obezřetnou a panem Lehkovážným se dotýká problému
+dokazatelnosti bezespornosti. Autor se dále zabývá tím, zda je vůbec
+možné vytvořit přesvědčivý důkaz a namítá, že důkaz samotný
+je v principu závislý na schopnosti čtenáře jej interpretovat,
+a čtenář, kterého důkaz nepřesvědčí může požadovat důkaz důkazu,…
+
+\subsection{Zkratky a axiomatizace vyšších úrovní}
+
+Autor navrhuje, že celou myšlenkou typografického odvozovacího systému
+je, že nemusíme nad odvozováním přemýšlet, lze ho dělat mechanicky, zatímco
+na úrovní přirozeného jazyka je nutné použít inteligenční mód.
+
+Pokud však zavedeme nějakou zkratku, například
+$$\langle \vnot{x} \lor \vnot{y} \rangle \equiv \vnot{\langle x \land y \rangle}$$
+a dokážeme ji na metaúrovni, pak jsme porušili tuto příjemnou
+vlastnost typografického systému a zničili tak celý jeho smysl.
+
+\bigskip
+Dále autor uvažuje nad řešením, které spočívá ve formalizaci metateorie
+k výrokové logice, což by nám umožnilo mechanicky dokazovat metatvrzení,
+avšak jen bychom tím odsunuli problém dále a narazili na něj při úvahách
+o metateroii a z toho vyplývající potřebě formalizace metametateorie.
 
 \end{document}
